@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		04F63DC12899F56C00A77886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F63DBF2899F56C00A77886 /* Main.storyboard */; };
 		04F63DC32899F56F00A77886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F63DC22899F56F00A77886 /* Assets.xcassets */; };
 		04F63DC62899F56F00A77886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F63DC42899F56F00A77886 /* LaunchScreen.storyboard */; };
+		285F63DE68158676DD255CC0 /* Pods_MeLi_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD04911FAAEF8FFE4E3E19DC /* Pods_MeLi_Swift.framework */; };
+		82D6CFAD289ACC150096C22C /* DetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D6CFAB289ACC150096C22C /* DetailViewViewController.swift */; };
+		82D6CFAE289ACC150096C22C /* DetailViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82D6CFAC289ACC150096C22C /* DetailViewViewController.xib */; };
+		82D6CFB2289ACC510096C22C /* DetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D6CFB1289ACC510096C22C /* DetailViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		04F63DC22899F56F00A77886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F63DC52899F56F00A77886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F63DC72899F56F00A77886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82D6CFAB289ACC150096C22C /* DetailViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewViewController.swift; sourceTree = "<group>"; };
+		82D6CFAC289ACC150096C22C /* DetailViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewViewController.xib; sourceTree = "<group>"; };
+		82D6CFB1289ACC510096C22C /* DetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewViewModel.swift; sourceTree = "<group>"; };
+		93FCE8B89EE592F782534E77 /* Pods-MeLi Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeLi Swift.release.xcconfig"; path = "Target Support Files/Pods-MeLi Swift/Pods-MeLi Swift.release.xcconfig"; sourceTree = "<group>"; };
+		CD04911FAAEF8FFE4E3E19DC /* Pods_MeLi_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeLi_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2013FBB1A386E3F3FCAB15 /* Pods-MeLi Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeLi Swift.debug.xcconfig"; path = "Target Support Files/Pods-MeLi Swift/Pods-MeLi Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285F63DE68158676DD255CC0 /* Pods_MeLi_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				04F63DB82899F56C00A77886 /* MeLi Swift */,
 				04F63DB72899F56C00A77886 /* Products */,
+				D8D4F0BC1569B4A6DD88E08F /* Pods */,
+				77DCA60553090462577E1FB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +69,7 @@
 		04F63DB82899F56C00A77886 /* MeLi Swift */ = {
 			isa = PBXGroup;
 			children = (
+				82D6CFA7289ACB4A0096C22C /* Views */,
 				04F63DB92899F56C00A77886 /* AppDelegate.swift */,
 				04F63DBB2899F56C00A77886 /* SceneDelegate.swift */,
 				04F63DBD2899F56C00A77886 /* ViewController.swift */,
@@ -67,6 +81,41 @@
 			path = "MeLi Swift";
 			sourceTree = "<group>";
 		};
+		77DCA60553090462577E1FB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD04911FAAEF8FFE4E3E19DC /* Pods_MeLi_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82D6CFA7289ACB4A0096C22C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82D6CFA9289ACB9E0096C22C /* DetailView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		82D6CFA9289ACB9E0096C22C /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				82D6CFAB289ACC150096C22C /* DetailViewViewController.swift */,
+				82D6CFAC289ACC150096C22C /* DetailViewViewController.xib */,
+				82D6CFB1289ACC510096C22C /* DetailViewViewModel.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		D8D4F0BC1569B4A6DD88E08F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF2013FBB1A386E3F3FCAB15 /* Pods-MeLi Swift.debug.xcconfig */,
+				93FCE8B89EE592F782534E77 /* Pods-MeLi Swift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F63DCA2899F56F00A77886 /* Build configuration list for PBXNativeTarget "MeLi Swift" */;
 			buildPhases = (
+				9EE7EE3D9575787BFE72B6C3 /* [CP] Check Pods Manifest.lock */,
 				04F63DB22899F56C00A77886 /* Sources */,
 				04F63DB32899F56C00A77886 /* Frameworks */,
 				04F63DB42899F56C00A77886 /* Resources */,
+				8AED1D1ED32EA58046F377AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +177,54 @@
 			files = (
 				04F63DC62899F56F00A77886 /* LaunchScreen.storyboard in Resources */,
 				04F63DC32899F56F00A77886 /* Assets.xcassets in Resources */,
+				82D6CFAE289ACC150096C22C /* DetailViewViewController.xib in Resources */,
 				04F63DC12899F56C00A77886 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AED1D1ED32EA58046F377AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeLi Swift/Pods-MeLi Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeLi Swift/Pods-MeLi Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeLi Swift/Pods-MeLi Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EE7EE3D9575787BFE72B6C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeLi Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04F63DB22899F56C00A77886 /* Sources */ = {
@@ -138,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F63DBE2899F56C00A77886 /* ViewController.swift in Sources */,
+				82D6CFB2289ACC510096C22C /* DetailViewViewModel.swift in Sources */,
 				04F63DBA2899F56C00A77886 /* AppDelegate.swift in Sources */,
+				82D6CFAD289ACC150096C22C /* DetailViewViewController.swift in Sources */,
 				04F63DBC2899F56C00A77886 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +379,7 @@
 		};
 		04F63DCB2899F56F00A77886 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF2013FBB1A386E3F3FCAB15 /* Pods-MeLi Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +398,7 @@
 		};
 		04F63DCC2899F56F00A77886 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93FCE8B89EE592F782534E77 /* Pods-MeLi Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
